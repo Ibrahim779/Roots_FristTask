@@ -1,0 +1,87 @@
+body
+{
+    margin: 0px;
+    background-color:  rgba(5, 151, 151, 0.295);
+
+}
+.header
+{
+    
+    border:  1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.151);
+    padding: 10px;
+    
+}
+
+
+.logo
+{
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    
+}
+h3
+{
+    display: inline;
+    font-size: 20px;
+    position: absolute;
+
+    
+
+}
+.menu 
+{
+
+    display: inline;
+    font-size: 1px;
+    position: absolute;
+    padding: 0px;
+
+    
+
+
+}
+
+.wrap_menu
+{
+    list-style: none;
+    display: inline;
+    margin-left: 200px;
+    margin-right: 200px;
+    
+     
+    
+}
+li
+{
+    display: inline;
+    margin-right: 50px;
+    font-size: 5px;
+    
+}
+a
+{
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+                    
+}
+.welcome
+{
+    display: inline;
+    position: relative;
+    margin-left: 900px;
+    font-size: 30px;
+    
+
+    
+}
+.image
+{
+    width: 1515;
+    height: 650;
+
+}
