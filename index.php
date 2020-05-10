@@ -133,7 +133,7 @@
 							<a href="EditeText.php" class="btn btn-dark btn-sm ">
 								Edit
 							</a>
-							<a href="#"  class="btn btn-danger btn-sm m-t-3"  >
+							<a href="php/delete.php"  class="btn btn-danger btn-sm m-t-3"  >
 								Delete
 							</a>
 						</div>
