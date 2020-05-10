@@ -23,10 +23,10 @@
             <div class="container-menu-header">
                 <div class="wrap_header">
                     <!-- Logo -->
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <img src="images/icons/logo3.jpg" alt="IMG-LOGO">
                     </a>
-                    <a href="index.html" class="logo p-l-50 ">
+                    <a href="index.php" class="logo p-l-50 ">
                         <h2>ROOTS</h2>
                     </a>
 
@@ -35,10 +35,10 @@
                         <nav class="menu">
                             <ul class="main_menu">
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.php">Home</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Personal Analysis</a>
+                                    <a href="contact.php">Personal Analysis</a>
                                 </li>
                             </ul>
                         </nav>
@@ -63,6 +63,7 @@
                         
     <div class="item-slick1 item1-slick1" style="background-image: url(images/banner-01.jpg);"></div>
     </div>
+    <img src="<?php include ("php/images.php");?>">
     
         </section>
 

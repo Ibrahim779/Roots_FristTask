@@ -19,26 +19,44 @@
 ///////////
 
 
-if(!isset($_COOKIE['text']))
+if(isset($_COOKIE['text']))
 {
+    
+    $fname=$_COOKIE['text']; 
+    $new=fopen("text/$fname.txt","r");
+    $new_text= fread($new,filesize("text/$fname.txt"));
+    //file_get_contents("text/$fname.txt")
+    
+    
+    echo $new_text;
+
+}
+else
+{
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+                
+        $name=$_POST['name'];
+        $edit=fopen("text/$name.txt","a+");
+        fwrite($edit,$_POST["message"]);
+        echo file_get_contents("text/$name.txt");
+       
+ 
+    }
+    else{
     
     $default=fopen("text/default.txt","r");
     $contents= fread($default,filesize("text/default.txt"));
     //file_get_contents("text/default.txt"); // ده بيعمل نفس الي فوق
     echo $contents;
 
-}
-else
-{
-    $fname=$_COOKIE['text']; 
-    $new=fopen("text/$fname.txt","r");
-    $new_text= fread($new,filesize("text/$fname.txt"));
-    //file_get_contents("text/$fname.txt")
-    
-    echo $new_text;
+    }
+
+  
 
 
 }
+
 ?>
 
 

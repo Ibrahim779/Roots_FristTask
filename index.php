@@ -67,7 +67,7 @@
 
 							<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
 								<!-- Button -->
-								<a href="showImage.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+								<a href="showImage.php?id=1" id="1" method="POST" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
 									Show
 								</a>
 							</div>
@@ -82,7 +82,7 @@
 
 							<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
 								<!-- Button -->
-								<a href="showImage.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+								<a href="showImage.php?id=2"  method="POST" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
 									Show
 								</a>
 							</div>
@@ -96,7 +96,7 @@
 					
 							<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
 								<!-- Button -->
-								<a href="showImage.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+								<a href="showImage.php?id=3" method="POST" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
 									Show
 								</a>
 							</div>
@@ -122,17 +122,18 @@
 						<div class="block3 p-b-30">
 						<?php
 						include("about.php");
+						
 						?>
 						</div>
 						<div style="color: white;" class="w-size25">
 							<!-- Button -->
-							<a href="AddText.html" class="btn btn-dark btn-sm">
+							<a href="AddText.php" class="btn btn-dark btn-sm">
 								Create New
 							</a>
-							<a href="EditeText.html" class="btn btn-dark btn-sm ">
+							<a href="EditeText.php" class="btn btn-dark btn-sm ">
 								Edit
 							</a>
-							<a href="#"  class="btn btn-danger btn-sm m-t-3">
+							<a href="#"  class="btn btn-danger btn-sm m-t-3"  >
 								Delete
 							</a>
 						</div>
@@ -142,7 +143,8 @@
 		</section>
 
 
-		<?php include("footer.html");?>
+		<?php include("footer.php");
+		?>
 
 	</body>
 </html>

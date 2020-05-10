@@ -20,7 +20,7 @@
             <div class="page-content--bge5">
                 <div class="container">
                     <div style="background-color: rgb(201, 235, 235);" class="col-md-8  m-t-100  m-l-250 p-b-50  ">
-                        <form class="leave-comment">
+                        <form class="leave-comment" method="POST" action="index.php">
 
                             <h4 class="m-text20 p-b-36 p-t-15 t-center">
 
@@ -35,17 +35,14 @@
                             </div>
 
                             <textarea style="height:300px;" class="dis-block s-text7 size20 bo4 p-l-22 p-r-22 p-t-13 m-b-20" name="message"
-                                placeholder="Text">“Roots” is non-profit technical community ,
-                                which aims to connect students who are interested in computer science.
-                                The great success is a group of small successes, our goal here is that we achieve the great success that we have
-                                developed in the field and the inheritance that we have chosen. This is why we will always encourage some on this group
-                                besides the telegram chat that you will follow up with the Instructors, we will start publishing every achievement that
-                                reaches it Even if it is small or if the road is long, the achievement is just one of a group of steps Lina, we will
-                                walk with each other, encouragement, technical assistance and even moral help, and most importantly here is the
-                                follow-up, of course we are all here to come by our choice, and that is sufficient reason that we strive hard, but with
-                                one person’s pixel It will be difficult if there is no follow-up discussion This we will try to follow you and see if
-                                there is a sloth we will encourage it and if someone has fulfilled a need we will put it down on the group and celebrate
-                                its achievement and success, then we will try to do what we can facilitate</textarea>
+                                placeholder="Text">
+                                <?php
+                                     $default= fopen("text/default.txt","r");
+                               
+                                    echo fread($default,filesize("text/default.txt"));
+                                    fclose($default);
+                                     ?>
+                            </textarea>
 
 
                             <div class="w-size25">
