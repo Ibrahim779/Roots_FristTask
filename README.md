@@ -1,7 +1,7 @@
 # Roots_FristTask
  
 ### Required :- 
-1. Make repetitive in one file by include
+1. Make repetitive code in one file and use it by include
 2. Login And Logout
 3. Show each user's name via 'Session' 
 4. Make an array that contains the names of the photos of the slideshow and display them on the page
